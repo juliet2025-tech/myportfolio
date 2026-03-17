@@ -1,0 +1,341 @@
+/* ====== Global Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #1a0246;
+  color: #fcfafa;
+  line-height: 1.6;
+}
+
+/* ====== Header / Navbar ====== */
+header {
+  background-color: #0a192f;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+/* ====== Hero Section ====== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(120deg, #0a192f 0%, #1c2237 100%);
+  color: #fff;
+  padding-top: 80px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  background-color: #ffffff;
+  color: black;
+  padding: 3rem;
+  width: 100%;
+  line-height: 1.6;
+  margin-top: 9rem;
+  display: inline-block;
+  border-bottom: 2px solid #ffffff;
+
+
+}
+
+#services {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: #000;
+  padding-top: 80px; /* navbar height + extra spacing */
+
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;        /* so the border only spans the text */
+  border-bottom: 3px solid #000000; /* your line color */
+  padding-bottom: 5px;         /* space between text and line */ 
+  padding: 1.5rem;
+}
+
+#services-tittle {color: #0a192f;
+padding-top: 80px; /* navbar height + extra spacing */
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: white;
+  padding: 1.5rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+
+.about-section{margin-bottom: 6rem;
+border-bottom: #1a0246;}
+
+#about{border-bottom: #170774;}
+#about-title {
+  color: #000000;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  padding-Top: 40px
+  
+  
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 13rem;
+  border-bottom: 3px solid #000000;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+/* ====== Section Styles ====== */
+section {
+  padding: 2rem 2rem;
+  
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0a192f;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  color: #fcfdfd;
+}
+/* ====== Projects / Cards ====== */
+.project-card {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ margin-bottom: 2rem;
+}
+
+#project{margin-bottom: 10rem;}
+
+.project-card:hover {
+  
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0a192f;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ====== Buttons ====== */
+button, .btn {
+  background-color: #64ffda;
+  color: #0a192f;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #52e0b1;
+}
+
+/* ====== Contact Form ====== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #0a192f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+
+.about-title{color: #000000;}
+
+/* ====== Responsive ====== */
+@media screen and (max-width: 768px) {
+  nav a {
+    margin-left: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+}
+
+
+
+/* Project links (GitHub / Live Demo) */
+#projects .project-card a {
+  display: inline-block;        /* makes links look like buttons */
+  margin-right: 1rem;           
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #64ffda;   /* accent color */
+  color: #0a192f;              /* dark text */
+  font-weight: 600;
+  border-radius: 8px;          /* rounded corners */
+  text-decoration: none;       /* remove underline */
+  transition: all 0.3s ease;  /* smooth hover transition */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+#projects .project-card a:hover {
+  background-color: #52e0b1;   /* slightly darker on hover */
+  transform: translateY(-2px); /* subtle lift effect */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  color: #0a192f;             /* keep text color consistent */
+}
+
+#certifications{padding-top: 100px;}
+
+#blog-tittle{padding-top: 40px;}
+
+#skills{padding-top: 40px;}
+
+#hero{ text-align:left;}
+.email-btn {
+  display: inline-block;
+  background: #3a0ae6;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+   margin-top: 20px;
+}
+
+.email-btn:hover {
+  background: #686575;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.hero-image {
+  position: absolute;  /* allows it to float on the page */
+  top: 100px;              /* aligns with top of parent */
+  right: 40px;            /* aligns with right edge */
+  width: 300px;        /* size of the circle */
+  height: 300px;
+  border-radius: 50%;  /* makes it a perfect circle */
+  overflow: hidden;    /* ensures image stays inside the circle */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* optional shadow */
+    border-radius: 50%;       /* circle */
+  overflow: hidden;         /* ensures image stays inside circle */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* optional shadow */
+  border: 5px solid #1a0246; /* blue stroke around circle */
+  margin-top: 3rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* keeps proportions and fills circle */
+}
+/* Text styling */
+
+@media (max-width: 768px) {
+  .hero-image {
+    position: static;  /* lets it flow normally on small screens */
+    margin: 2rem auto 0;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#hero-text{margin-top: 6rem;
+color: #ffffff;}
