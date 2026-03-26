@@ -1,19 +1,16 @@
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-  background-color: #0f172a;
-  color: white;
-}
-
+/* ===== NAVBAR BASE ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem; /* reduce if you want tighter edge */
+  padding: 15px 20px;
+  background: #030016;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* ===== LOGO ===== */
 .logo {
   display: flex;
   align-items: center;
@@ -22,44 +19,69 @@
 
 .logo img {
   width: 40px;
-  height: 40px;
 }
 
+.logo span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ===== NAV LINKS (DESKTOP) ===== */
 .nav-links {
   display: flex;
-  gap: 2rem;
   list-style: none;
+  gap: 20px;
 }
 
-.logo{
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-links{
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links a{
+.nav-links li a {
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
 }
 
-.nav-links a:hover{
-  color: #38bdf8;
+/* ===== HAMBURGER (HIDDEN ON DESKTOP) ===== */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
 }
 
-.navbar{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+/* ================= MOBILE STYLING ================= */
+@media (max-width: 768px) {
 
-.navbar{
-position: fixed;
-top: 0;
-width: 100%;
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    /* Hidden by default */
+    transform: translateY(-150%);
+    transition: 0.3s ease;
+  }
+
+  /* When menu is open */
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
 }
