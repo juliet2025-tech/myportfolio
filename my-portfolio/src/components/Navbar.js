@@ -1,7 +1,9 @@
-import React from "react";
+
+import React, { useState } from "react"; // ✅ IMPORT useState
 import "./Navbar.css";
 
 function Navbar() {
+const [menuOpen, setMenuOpen] = useState(false);
   return (
 
     
@@ -18,15 +20,16 @@ function Navbar() {
   ☰
 </div>
 
-      <ul className="nav-links">
-        <li><a href="#Hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#certifications">Certification</a></li>
-        <li><a href="#blog">Blog</a></li>
-      </ul>
+
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+  <li><a href="#Hero" onClick={() => setMenuOpen(false)}>Home</a></li>
+  <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+  <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+  <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+  <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
+  <li><a href="#certifications" onClick={() => setMenuOpen(false)}>Certification</a></li>
+  <li><a href="#blog" onClick={() => setMenuOpen(false)}>Blog</a></li>
+</ul>
     </nav>
   );
 

@@ -53,8 +53,8 @@
     display: block;
   }
 .navbar {
-  width: 100%;
-  box-sizing: border-box;
+  width: 80%;
+
 }
 
   .nav-links {
@@ -67,6 +67,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px 0;
+    z-index: 999;
 
     /* Hidden by default */
     transform: translateY(-150%);
