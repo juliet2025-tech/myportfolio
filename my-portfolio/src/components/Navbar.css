@@ -53,8 +53,8 @@
     display: block;
   }
 .navbar {
-  width: 100%;
-  box-sizing: border-box;
+  width: 95%;
+  
 
 }
 
@@ -79,11 +79,13 @@
   /* When menu is open */
   .nav-links.active {
     transform: translateY(0);
+    color: #000;
   }
 
   .nav-links li {
     width: 100%;
     text-align: center;
+    color: #000;
   }
 
   .nav-links li a {
