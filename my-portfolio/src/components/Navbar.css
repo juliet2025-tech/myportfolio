@@ -52,6 +52,10 @@
   .hamburger {
     display: block;
   }
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+}
 
   .nav-links {
     position: absolute;

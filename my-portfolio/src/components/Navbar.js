@@ -3,13 +3,20 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
+
+    
     <nav className="navbar">
+      
       
 
  <div className="logo">
         <img src="/logo102.png" alt="Logo" />
         <span>Jules Web Studio</span>
       </div>
+
+        <div className="hamburger">
+  ☰
+</div>
 
       <ul className="nav-links">
         <li><a href="#Hero">Home</a></li>
@@ -22,6 +29,9 @@ function Navbar() {
       </ul>
     </nav>
   );
+
+  
+
 }
 
 export default Navbar;
