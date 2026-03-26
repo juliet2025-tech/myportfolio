@@ -1,12 +1,13 @@
 .skills-section{
-  padding-top:40px;
+  margin-top: -20px;
   text-align: center;
-  color: #000;
+  color: #020000;
 }
 
 .skills-section h2{
   font-size: 2rem;
-  margin-bottom: 2rem;
+  
+  
 }
 
 .skills-container{
@@ -26,4 +27,32 @@
 
 .skill-card:hover{
   transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 30px 20px;
+  }
+
+  #skills {
+    font-size: 24px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+  }
 }

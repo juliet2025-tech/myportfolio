@@ -11,7 +11,7 @@ function About() {
         learning with ALX Africa. I enjoy building modern and responsive
         web applications using technologies like HTML, CSS, JavaScript,
         and React.
-      </p>
+      </p> 
 
       <p>
         My journey into tech started after graduating with a degree in

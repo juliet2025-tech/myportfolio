@@ -63,7 +63,7 @@ function Certification() {
         >
           <h3 style={{ color: "#28a745" }}>Front-End Development</h3>
           <a
-            href="https://savanna.alxafrica.com/certificates/MnfPspXSNF" // same link for now
+            href="https://savanna.alxafrica.com/certificates/Rgzs5eCmTH" // same link for now
             target="_blank"
             rel="noopener noreferrer"
             style={{

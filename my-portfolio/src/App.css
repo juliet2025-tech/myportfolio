@@ -54,6 +54,42 @@ header h1 {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  #Hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #hero-text {
+    font-size: 26px;
+  }
+
+  #hero {
+    font-size: 16px;
+  }
+
+  #Hero p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .email-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+
 .about-section {
   background-color: #ffffff;
   color: black;
@@ -66,6 +102,25 @@ header h1 {
 
 
 }
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  #about-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+}
+
 
 #services {
   padding: 4rem 2rem;
@@ -82,7 +137,7 @@ header h1 {
   display: inline-block;        /* so the border only spans the text */
   border-bottom: 3px solid #000000; /* your line color */
   padding-bottom: 5px;         /* space between text and line */ 
-  padding: 1.5rem;
+  
 }
 
 #services-tittle {color: #0a192f;
@@ -155,6 +210,72 @@ section h2 {
   padding-bottom: 0.3rem;
   color: #fcfdfd;
 }
+.services-section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+#services-title {
+  font-size: 32px;
+  color: #050505;
+  margin-bottom: 0;
+}
+
+.services-subtext {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  border: 1px solid #220475;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 30px 20px;
+  }
+
+  #services-title {
+    font-size: 24px;
+
+  }
+
+  .services-subtext {
+    font-size: 14px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr; /* 1 per row on small screens */
+    gap: 15px;
+  }
+
+  .service-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+}
+
 /* ====== Projects / Cards ====== */
 .project-card {
   background-color: #fff;
@@ -192,6 +313,7 @@ button, .btn {
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s ease;
+   margin-top: 40px;
 }
 
 button:hover, .btn:hover {
@@ -249,11 +371,12 @@ footer p {
 
 
 
+
 /* Project links (GitHub / Live Demo) */
 #projects .project-card a {
   display: inline-block;        /* makes links look like buttons */
   margin-right: 1rem;           
-  margin-bottom: 0.5rem;
+  margin-top: 10px;
   padding: 0.6rem 1.2rem;
   background-color: #64ffda;   /* accent color */
   color: #0a192f;              /* dark text */
