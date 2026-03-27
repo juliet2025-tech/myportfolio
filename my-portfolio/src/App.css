@@ -10,7 +10,7 @@
 @media (max-width: 768px) {
   html, body {
     max-width: 100%;       /* body never exceeds screen */
-    overflow-x: hidden;    /* hide horizontal scroll */
+       /* hide horizontal scroll */
     overflow-y: auto;   /* allow vertical scroll */
   }
 }
