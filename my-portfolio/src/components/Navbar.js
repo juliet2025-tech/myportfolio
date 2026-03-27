@@ -10,6 +10,7 @@ function Navbar() {
         <img src="/logo102.png" alt="Logo" />
         <span>Jules Web Studio</span>
       </div>
+      {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
 
       {/* Hamburger toggle */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -24,6 +25,7 @@ function Navbar() {
         <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
         <li><a href="#certifications" onClick={() => setMenuOpen(false)}>Certification</a></li>
         <li><a href="#blog" onClick={() => setMenuOpen(false)}>Blog</a></li>
+        
       </ul>
     </nav>
   );

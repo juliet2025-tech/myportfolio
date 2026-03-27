@@ -9,6 +9,7 @@ function Footer() {
         textAlign: "center",
         padding: "2rem",
         marginTop: "3rem"
+        
       }}
     >
       <p>© 2026 Ojide Chibundo Juliet</p>
@@ -49,6 +50,8 @@ function Footer() {
         </a>
       </p>
     </footer>
+
+    
   );
 }
 
