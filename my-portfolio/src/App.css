@@ -4,12 +4,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+   
+}
+
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;       /* body never exceeds screen */
+    overflow-x: hidden;    /* hide horizontal scroll */
+  }
 }
 
 body {
   background-color: #1a0246;
-  color: #fcfafa;
+  color: #fff;
   line-height: 1.6;
+
+  
 }
 
 /* ====== Header / Navbar ====== */
@@ -52,15 +62,26 @@ header h1 {
   font-size: 1.2rem;
   max-width: 600px;
   margin-bottom: 2rem;
-}
+} 
 
 @media (max-width: 768px) {
 
-  #Hero {
+
+
+  .Hero {
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 20px;
     text-align: left;
+    max-width: 100%;
+  }
+
+   .hero {
+    flex-direction: column;       /* stack elements */
+    align-items: center;          /* center text */
+    padding: 2rem 1rem;           /* smaller padding */
+    gap: 1.5rem;                  /* reduce gap */
+    max-width: 100%;              /* ensure it never exceeds screen */
   }
 
   /* Hide image on mobile */
