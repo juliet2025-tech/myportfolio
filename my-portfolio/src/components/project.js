@@ -10,6 +10,10 @@ function Projects() {
  <p>This tool allows users to monitor both income and expenses, providing clear insights into spending habits.
 
 The application features categorized entries for income and expenses, making it easy to organize financial data. Users can add, edit, and delete transactions seamlessly, ensuring full control over their records.</p>
+<p style={{ fontWeight: 'bold', fontSize: '1.1rem', color: '#333' }}>Demo Login (no signup needed) </p>
+  <p>Email: demo@budget.com</p>
+ <p> Password: Demo123
+</p>
 
         <a href="https://github.com/juliet2025-tech/budget-tracker" target="_blank" rel="noreferrer">
           GitHub
